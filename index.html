@@ -70,7 +70,83 @@
             эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button-hero">Заказать услугу</button>
+          <button data-modal-open type="submit" class="button-hero">
+            Заказать услугу
+          </button>
+        </div>
+
+        <div data-modal class="backdrop is-hidden">
+          <div class="modal">
+            <button data-modal-close class="close-button">
+              <svg class="close-icon" width="11" height="11">
+                <use href="./images/sprite.svg#cancel"></use>
+              </svg>
+            </button>
+
+            <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
+            <form>
+              <div class="form-field">
+                <input
+                  class="input text"
+                  type="text"
+                  id="text"
+                  name="user-name"
+                  placeholder=" "
+                />
+                <label class="text-label" for="text">Имя</label>
+                <svg class="name-icon icon-hover">
+                  <use href="./images/sprite.svg#name"></use>
+                </svg>
+              </div>
+
+              <div class="form-field">
+                <input
+                  class="input tel"
+                  type="tel"
+                  id="tel"
+                  name="telephone"
+                  placeholder=" "
+                />
+                <label class="text-label" for="tel">Телефон</label>
+                <svg class="tell-icon icon-hover">
+                  <use href="./images/sprite.svg#tel"></use>
+                </svg>
+              </div>
+
+              <div class="form-field">
+                <input
+                  class="input email"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder=" "
+                />
+                <label class="text-label" for="email">Почта</label>
+                <svg class="email-icon icon-hover">
+                  <use href="./images/sprite.svg#email"></use>
+                </svg>
+              </div>
+
+              <div class="coments-box">
+                <textarea
+                  class="form-teaxtarea"
+                  name="comment"
+                  id="comments"
+                  placeholder=" "
+                ></textarea>
+                <label class="comments" for="comments">Комментарий</label>
+              </div>
+
+              <label class="agreement" for="checkbox">
+                <input id="checkbox" class="checkbox" type="checkbox" />
+                <span class="checkbox-icon"></span>
+                Соглашаюсь с рассылкой и принимаю
+                <a href=""> Условия договора</a>
+              </label>
+
+              <button class="send-button">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -300,6 +376,9 @@
                       </svg>
                     </a>
                   </li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -318,7 +397,7 @@
             </li>
             <li class="item">
               <a href=""
-                ><svg class="icon-client" width="40" height="52" >
+                ><svg class="icon-client" width="40" height="52">
                   <use href="./images/sprite.svg#icon-client2"></use>
                 </svg>
               </a>
@@ -414,15 +493,25 @@
           </ul>
         </div>
 
-        <form>
-          <label for="subscription">Подпишитесь на рассылку</label>
-          <input type="email" name="email" placeholder="E-mail"/>
-          <button type="submit" class="button subscribe">
+        <form class="form-subscribe">
+          <label for="subscription" class="label-subscribe"
+            >Подпишитесь на рассылку</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="subscription"
+            placeholder="E-mail"
+            class="input-subscribe"
+          />
+          <button type="submit" class="button-subscribe">
             Подписаться
           </button>
         </form>
       </div>
       <p class="developers container">2020 | Developed by GoIT Students</p>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
