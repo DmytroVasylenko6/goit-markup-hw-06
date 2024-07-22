@@ -452,7 +452,7 @@ body {
 }
 
 .site-footer .subscribe {
-  margin-left: 94px;
+  margin-left: auto;
 }
 
 .site-footer .subscribe-description {
@@ -554,11 +554,6 @@ body {
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   padding: 72px 24px 24px 24px;
 
