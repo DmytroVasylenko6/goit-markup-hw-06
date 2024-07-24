@@ -1,14 +1,14 @@
 {
-  "name": "msc-5-bandler",
+  "name": "goit-markup-hw-06",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/msc-5-bandler/",
+    "build": "vite build --base=/goit-markup-hw-06/",
     "preview": "vite preview"
   },
-  "author": "YK911 <yaroslavkosytsia@gmail.com>",
+  "author": "DmytroVasylenko6 <tredstoun651@ukr.net>",
   "license": "MIT",
   "devDependencies": {
     "glob": "^8.1.0",
