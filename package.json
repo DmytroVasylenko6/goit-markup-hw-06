@@ -3,6 +3,14 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://DmytroVasylenko6.github.io/goit-markup-hw-06/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmytroVasylenko6/goit-markup-hw-06.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DmytroVasylenko6/goit-markup-hw-06/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/goit-markup-hw-06/",
